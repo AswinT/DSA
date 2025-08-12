@@ -1,7 +1,9 @@
-const arr = [8,2,6,9,2,1,6]
+const arr = [8, 2, 6, 9, 2, 1, 6];
 
-// have to find the biggest number
-let a = 0
-for(let num of arr){
-  console.log(num)
+// biggest number
+
+let biggest = arr[0];
+for (let num of arr) {
+  if (biggest < num) biggest = num;
 }
+console.log(`biggest number is ${biggest}`);
